@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6c6cc62f.chunk.css",
+    "main.js": "/static/js/main.e5ea2f67.chunk.js",
+    "main.js.map": "/static/js/main.e5ea2f67.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cc85cbe0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cc85cbe0.js.map",
+    "static/js/2.91baa5d2.chunk.js": "/static/js/2.91baa5d2.chunk.js",
+    "static/js/2.91baa5d2.chunk.js.map": "/static/js/2.91baa5d2.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6c6cc62f.chunk.css.map": "/static/css/main.6c6cc62f.chunk.css.map",
+    "static/js/2.91baa5d2.chunk.js.LICENSE.txt": "/static/js/2.91baa5d2.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/SFProText.90da7ab1.ttf",
+    "static/media/account-background.405bbaaf.webp": "/static/media/account-background.405bbaaf.webp",
+    "static/media/balance-background.39c7c150.webp": "/static/media/balance-background.39c7c150.webp",
+    "static/media/home-background.db95dff5.webp": "/static/media/home-background.db95dff5.webp",
+    "static/media/login-background.a3f06656.webp": "/static/media/login-background.a3f06656.webp",
+    "static/media/waletoo-background.8a6fdc69.webp": "/static/media/waletoo-background.8a6fdc69.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc85cbe0.js",
+    "static/js/2.91baa5d2.chunk.js",
+    "static/css/main.6c6cc62f.chunk.css",
+    "static/js/main.e5ea2f67.chunk.js"
+  ]
+}

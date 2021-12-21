@@ -1,0 +1,14 @@
+//   TODO LIST
+
+- Sections : 
+    Balance
+    Argent de côté
+    Objectifs
+
+- Loading spinner
+
+- erreur photo mauvais format
+
+- ID nom photo
+
+- ordre montants

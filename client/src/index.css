@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "SFPro";
+    src: url("./fonts/SFProText.ttf") format("ttf"),
+   }
+
+   body {
+       font-family: "SFPro", Arial, Helvetica, sans-serif !important;
+       width: 100%;
+       color: rgb(70, 77, 87);
+   }
+
+   @media screen and (min-width: 630px)
+    {
+      .shadow-blue {
+        box-shadow: 10px 10px lightblue;
+      }
+
+      .shadow-red {
+        box-shadow: 10px 10px lightcoral;
+      }
+
+      .shadow-gray {
+        box-shadow: 10px 10px lightgray;
+    }}
+
+  .hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+  .pp-pic:hover {
+    cursor: pointer;
+  }
