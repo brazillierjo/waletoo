@@ -6,7 +6,7 @@ export default function Logout() {
   const logout = async () => {
     await axios({
       method: "get",
-      url: `http://localhost:3001/api/logout`,
+      url: `https://waletoo.herokuapp.com/api/logout`,
       withCredentials: true,
     })
       .catch((err) => console.log(err));

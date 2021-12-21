@@ -16,7 +16,7 @@ export default function SignUp() {
 
         axios({
             method: "post",
-            url: `http://localhost:3001/api/register`,
+            url: `https://waletoo.herokuapp.com/api/register`,
             withCredentials: true,
             data: {
                 email,

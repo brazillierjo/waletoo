@@ -19,7 +19,7 @@ export default function Balance() {
 
     useEffect(() => {
         if (uid !== null) {
-            axios.get(`http://localhost:3001/api/balance/${uid}`)
+            axios.get(`https://waletoo.herokuapp.com/api/balance/${uid}`)
                 .then((res) => {
                     if (res.data[0].incomes && res.data[0].fees) {
                         setUserWalletIncomes(res.data[0].incomes)
@@ -48,7 +48,7 @@ export default function Balance() {
         if ((incomeName.length > 0 && incomeName !== 'nom de revenu...') && incomeAmount > 0) {
             axios({
                 method: "put",
-                url: `http://localhost:3001/api/balance/${uid}`,
+                url: `https://waletoo.herokuapp.com/api/balance/${uid}`,
                 withCredentials: true,
                 data: { incomes: { ...userWalletIncomes, ...data } }
             }).then(() => {
@@ -82,7 +82,7 @@ export default function Balance() {
         if ((feeName.length > 0 && feeName !== 'nom de mensualité...') && feeAmount > 0) {
             axios({
                 method: "put",
-                url: `http://localhost:3001/api/balance/${uid}`,
+                url: `https://waletoo.herokuapp.com/api/balance/${uid}`,
                 withCredentials: true,
                 data: { fees: { ...userWalletFees, ...data } }
             }).then(() => {
@@ -114,7 +114,7 @@ export default function Balance() {
         }
         axios({
             method: "put",
-            url: `http://localhost:3001/api/balance/${uid}`,
+            url: `https://waletoo.herokuapp.com/api/balance/${uid}`,
             withCredentials: true,
             data: data
         }).then(setformIncomes(false)
@@ -127,7 +127,7 @@ export default function Balance() {
         }
         axios({
             method: "put",
-            url: `http://localhost:3001/api/balance/${uid}`,
+            url: `https://waletoo.herokuapp.com/api/balance/${uid}`,
             withCredentials: true,
             data: data
         }).then(setformFees(false)
@@ -141,7 +141,7 @@ export default function Balance() {
         let data = { [key]: "" }
         axios({
             method: "delete",
-            url: `http://localhost:3001/api/balanceOneIncome/${uid}`,
+            url: `https://waletoo.herokuapp.com/api/balanceOneIncome/${uid}`,
             data: data
         }).then((res) => {
             if (res.data[0].incomes) {
@@ -157,7 +157,7 @@ export default function Balance() {
         let data = { [key]: "" }
         axios({
             method: "delete",
-            url: `http://localhost:3001/api/balanceOneFee/${uid}`,
+            url: `https://waletoo.herokuapp.com/api/balanceOneFee/${uid}`,
             data: data
         }).then((res) => {
             if (res.data[0].fees) {

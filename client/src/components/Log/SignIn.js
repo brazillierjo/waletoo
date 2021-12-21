@@ -13,7 +13,7 @@ export default function SignIn() {
 
         axios({
             method: "post",
-            url: `http://localhost:3001/api/login`,
+            url: `https://waletoo.herokuapp.com/api/login`,
             withCredentials: true,
             data: {
                 email,
