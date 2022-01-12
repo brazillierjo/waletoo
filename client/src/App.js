@@ -49,7 +49,7 @@ function App() {
     const fetchToken = async () => {
       await axios({
         method: 'get',
-        url: `https://waletoo.herokuapp.com/jwtid`,
+        url: `http://localhost:3001/jwtid`,
         withCredentials: true
       }).then((res) => setUid(res.data))
         .catch(() => console.log('Aucun token d\'authentification'))

@@ -14,7 +14,6 @@ router.get('/', (req, res) => {
 router.post('/register', authController.signUp)
 router.post('/login', authController.signIn)
 router.get('/logout', authController.logout)
-router.post('/login-with-google', authController.loginWithGoogle)
 
 // user info db
 router.get('/:id', userController.userInfo)

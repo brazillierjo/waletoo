@@ -11,7 +11,7 @@ const DeleteUser = () => {
     const handleDelete = () => {
         axios({
             method: "delete",
-            url: `https://waletoo.herokuapp.com/api/${uid}`,
+            url: `http://localhost:3001/api/${uid}`,
         }).then((res) => {
             window.location = "/"
         }).catch((err) => {

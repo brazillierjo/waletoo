@@ -8,7 +8,7 @@ export const UPLOAD_PICTURE = "UPLOAD_PICTURE"
 export const getUser = (uid) => {
     return (dispatch) => {
         return axios
-            .get(`https://waletoo.herokuapp.com/api/${uid}`)
+            .get(`http://localhost:3001/api/${uid}`)
             .then((res) => {
                 dispatch({ type: GET_USER, payload: res.data })
             })
@@ -19,7 +19,7 @@ export const getUser = (uid) => {
 export const updateLastName = (uid, lastname) => {
     return (dispatch) => {
         return axios
-            .put(`https://waletoo.herokuapp.com/api/${uid}`, { lastname })
+            .put(`http://localhost:3001/api/${uid}`, { lastname })
             .then((res) => {
                 dispatch({ type: UPDATE_LAST_NAME, payload: lastname })
             })
@@ -30,7 +30,7 @@ export const updateLastName = (uid, lastname) => {
 export const updateFirstName = (uid, firstname) => {
     return (dispatch) => {
         return axios
-            .put(`https://waletoo.herokuapp.com/api/${uid}`, { firstname })
+            .put(`http://localhost:3001/api/${uid}`, { firstname })
             .then((res) => {
                 dispatch({ type: UPDATE_FIRST_NAME, payload: firstname })
             })
@@ -41,9 +41,9 @@ export const updateFirstName = (uid, firstname) => {
 export const uploadPicture = (data, id) => {
     return (dispatch) => {
         return axios
-            .post(`https://waletoo.herokuapp.com/api/user/upload`, data)
+            .post(`http://localhost:3001/api/user/upload`, data)
             .then(() => {
-                axios.get(`https://waletoo.herokuapp.com/api/${id}`)
+                axios.get(`http://localhost:3001/api/${id}`)
                     .then((res) => {
                         dispatch({ type: GET_USER, payload: res.data })
                     })
