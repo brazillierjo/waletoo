@@ -16,14 +16,6 @@ app.use(express.urlencoded({
 }))
 app.use(cookieParser())
 
-
-// jwt
-app.get('*', checkUser)
-app.get('/jwtid', requireAuth, (req, res) => {
-    res.status(200).send(res.locals.user._id)
-})
-
-// routes
 app.use('/api', routes)
 
 app.use(express.static(path.join(__dirname, "./client/build")));
@@ -38,6 +30,12 @@ app.get("*", function (_, res) {
         }
     );
 });
+
+// jwt
+app.get('*', checkUser)
+app.get('/jwtid', requireAuth, (req, res) => {
+    res.status(200).send(res.locals.user._id)
+})
 
 // HEROKU
 // if (process.env.NODE_ENV === 'production') {
